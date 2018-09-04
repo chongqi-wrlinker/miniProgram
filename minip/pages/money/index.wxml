@@ -1,0 +1,60 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/money.png'></image>
+    </view>
+    <view class='shouru'>
+      <view class='wrb'>
+        <image src='/image/wrb.png'></image>
+        <text>沃仁币：</text>
+        <text class='money'>10</text>
+      </view>
+      <view class='jifen'>
+        <image src='/image/jifen.png'></image>
+        <text>总积分：</text>
+        <text class='money'>200</text>
+      </view>
+      <view class='mingxi'>
+        <text class='fangshi'>获得方式</text>
+        <text class='num'>收入\支出</text>
+      </view>
+      <view class='mxnr'>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2￥</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2积分</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2￥</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2积分</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2￥</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2积分</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2￥</view>
+        </view>
+        <view class='mxlb'>
+          <view class='fsnr'>对对对对对对多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+          <view class='mynr'>+2积分</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

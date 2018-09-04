@@ -1,0 +1,32 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <!--<picker mode="multiSelector" bindcolumnchange="bindMultiPickerColumnChange"  value="{{multiIndex}}" range='{{multiArray}}'  bindchange="bindPickerChange">
+        <button class='xuanze'>选择难度</button>
+      </picker> -->
+      <text class='zhu'>注：</text>
+      <text class='zhushi'>下述列表是曾经完成过得成就，点击对应的列表可跳转到对应的难度等级！</text>
+    </view>
+    <view class='liebiaotou'>
+      <text class='kemu'>科目</text>
+      <text class='other'>年级</text>
+      <text class='other'>难度</text>
+      <text class='other'>得分</text>
+      <text class='other'>正确率</text>
+    </view>
+    <scroll-view scroll-y='true' style="height:340px;float:left;" bindscrolltolower='lower'>
+      <block wx:for="{{res}}" wx:key="{{index}}">
+        <view class='li' data-lessionid='{{item.lessionId}}' data-levelid='{{item.levelid}}' bindtap='wangqi'>
+          <text class='kemu'>{{item.lessionname}}</text>
+          <text class='other'>{{item.nianji}}</text>
+          <text class='other' data-nandu='{{item.levelname}}'>{{item.levelname}}</text>
+          <text class='other'>{{item.score}}</text>
+          <text class='other'>{{item.math}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

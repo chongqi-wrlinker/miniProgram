@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newdati/index",
+    "pages/kemu/index",
+    "pages/newpaihang/index",
+    "pages/lishi/index",
+    "pages/guize/index",
+    "pages/shezhi/index",
+    "pages/tuisong/index",
+    "pages/newjiexi/index",
+    "pages/our/index",
+    "pages/cuoti/index",
+    "pages/tiwen/index",
+    "pages/jieda/index",
+    "pages/money/index",
+    "pages/denglu/index",
+    "pages/zhuce/index",
+    "pages/fabu/index",
+    "pages/stady/index",
+    "pages/chongzuo/index",
+    "pages/wentixx/index",
+    "pages/huida/index",
+    "pages/newlishi/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e0bb69",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#e0bb69",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "image/index_l.png",
+        "iconPath": "image/index_a.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/cuo_l.png",
+        "iconPath": "image/cuo_a.png",
+        "pagePath": "pages/cuoti/index",
+        "text": "错题集"
+      },
+      {
+        "selectedIconPath": "image/stady_l.png",
+        "iconPath": "image/stady_a.png",
+        "pagePath": "pages/stady/index",
+        "text": "学堂"
+      },
+      {
+        "selectedIconPath": "image/our_l.png",
+        "iconPath": "image/our_a.png",
+        "pagePath": "pages/our/index",
+        "text": "我"
+      }
+    ]
+  }
+}

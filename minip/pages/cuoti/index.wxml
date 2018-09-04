@@ -1,0 +1,31 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='tuisongnr'>
+    <scroll-view scroll-y='true' style="height:100%;" bindscrolltolower='lower'>
+      <block wx:for="{{list}}" wx:key="{{index}}">
+      <view class='liebiao'>
+        <view class='xuhao'>{{index+1}}、</view>
+        <view class='timunr' bindtap='chongzuo' data-id="{{item[0].answerId}}">
+          <template is="wxParse" data="{{wxParseData:item}}"/>
+        </view>
+        <view class='nandukemu'>
+          <text class='ndkmcss'>{{item[0].lessionLuJu}}</text>
+          <text class='ndkmcss'>{{item[0].lavelname}}</text>
+          <text class='ndkmcss'>{{item[0].time}}</text>
+          <block wx:if="{{item[0].state}}">
+            <text class='ndkmcss'>该题已经答对了</text>
+          </block>
+        </view>
+      </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view> 
+</view>
+<view id="zhezhao" class="{{showType ? '':'hidden'}}"></view>
+
+

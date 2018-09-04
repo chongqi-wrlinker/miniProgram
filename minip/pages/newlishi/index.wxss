@@ -1,0 +1,120 @@
+.min{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+left:0;
+top:0;
+z-index: -1;
+}
+.backimg{width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;}
+.bodymin{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+height:100%;
+
+}
+.headertop{border-bottom:1px solid #ff9103;
+float:left;
+width:90% !important;
+line-height:35px;
+text-align:30px;
+overflow:hidden;
+height:35px;
+position:relative;
+font-size:18px;
+
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.hdtop{float:left;
+width:100%;
+margin-bottom:-1px;
+
+}
+.headertop text{padding-left:15px;
+padding-right:15px;
+display:inline-block;
+height:33px;
+
+}
+.top{
+  float:left;
+width:100%;
+height:8%;
+}
+.top image{width: 68%; height: 70%; margin-top: 5%;}
+.liebiaotou{float:left;
+width:100%;
+height:35px;
+line-height:35px;
+background-color:#e0bb69;
+color:#fff;
+text-align:left;
+padding-left:3px;
+font-size: 14px;
+}
+.kemu{float:left;
+width:32%;
+overflow:hidden;
+height:35px;
+white-space:nowrap;
+text-overflow:ellipsis;
+}
+.other{float:left;
+width:17%;
+overflow:hidden;
+height:35px;
+white-space:nowrap;
+text-overflow:ellipsis;
+
+}
+.li{font-size:12px;
+text-align:left;
+padding-left:3px;
+float:left;
+width:100%;
+height:35px;
+line-height:35px;
+border-bottom:1px solid #ffcd8c;
+color:#575445;
+}
+.xuanze{width:32%;
+border:0px;
+margin-top:15px;
+padding:0px;
+line-height:35px;
+font-size:15px;
+background-color:#e0bb69;
+color:#fff;
+}
+.zhu{font-size: 13px;}
+.zhushi{
+  font-size: 12px;
+}
+.picker-view {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.addr-item {
+  line-height: 50px;
+  text-align: center;
+}
+
+.show {
+  text-align: center;
+  margin: 20px;
+  height: 50px;
+}
+
+.choose {
+  margin: 20px 0;
+}

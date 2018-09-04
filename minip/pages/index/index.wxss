@@ -1,0 +1,53 @@
+.min{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+left:0;
+top:0;
+z-index: -1;
+}
+.backimg{width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;}
+.bodymin{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+height:100%;
+
+}
+.bodyimage{
+width:84%;
+height:80%;
+margin:10px;
+
+
+}
+.minbutton{float:left;
+width:100%;
+height:15%;
+background-color:none !important;
+background:none !important;
+}
+ button:after{border: none;}
+ .other{float:left;
+width:100%;
+height:20%;
+margin-left:5%;
+}
+.other button{float: left;
+height: 100%;
+background-color:none !important;
+background:none !important;
+width: 30%;}
+.other image{
+  width:80%;
+height:56%;
+
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}

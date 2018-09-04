@@ -1,0 +1,75 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='touxtop'>
+      <button open-type='getUserInfo' bindgetuserinfo="getUserInfo" class='touxiang'><image src='{{imgUrl}}' ></image></button>
+    </view>
+    <view class='xiangxixx'>
+      <view class='xxliebiao'>
+        <text bindtap='zhanKai' style='display:block'>沃仁信息</text>
+        <image src='/image/tiaoz.png' class="{{zhanKai1?'tiaoz xz':'tiaoz'}}"></image>
+        <view class="{{zhanKai1?'ourxx':'hidden'}}">
+          <view>
+            <text>姓名：</text>
+            <text>{{userInfo.nickname}}</text>
+          </view>
+          <view>
+            <text>邮箱：</text>
+            <text>{{userInfo.email}}</text>
+          </view>
+          <view>
+            <text>电话：</text>
+            <text>{{userInfo.tel}}</text>
+          </view>
+          <view>
+            <text>性别：</text>
+            <text>{{userInfo.sex}}</text>
+          </view>
+          <view>
+            <text>地址：</text>
+            <text>{{userInfo.address}}</text>
+          </view>
+        </view>
+      </view>
+      
+        <block wx:if="{{loginType==false}}">
+        <view class='xxliebiao' bindtap='denglu'>
+          <text>登录状态：</text>
+          <text class='xx'>未登录,点击登录</text>
+          <image src='/image/tiaoz.png' class='tiaoz'></image>
+        </view>
+        </block>
+        <block wx:elif="{{loginType==true}}">
+          <view class='xxliebiao'>
+            <text>登录状态：</text>
+            <text class='xx'>沃仁号：{{userInfo.loginname}}</text>
+            <image src='/image/tuichudenglu.png' style='width:20px;height:20px;top:9px;' class='tiaoz' bindtap='logout'></image>
+          </view>
+        </block>
+        
+      <view class='xxliebiao' bindtap='tiwen'>
+        <text>我的提问：</text>
+        <text class='xx'>{{askCount}}条</text>
+        <image src='/image/tiaoz.png' class='tiaoz'></image>
+      </view>
+      <view class='xxliebiao' bindtap='jieda'>
+        <text>我的解答：</text>
+        <text class='xx'>{{replyCount}}条</text>
+        <image src='/image/tiaoz.png' class='tiaoz'></image>
+      </view>
+      <!--
+        <view class='xxliebiao' bindtap='money'>
+        <text>我的收入：</text>
+        <text class='xx'>200积分、10沃仁币</text>
+        <image src='/image/tiaoz.png' class='tiaoz'></image>
+      </view>
+      -->
+      <!--<view class='xxliebiao' bindtap='fabu'>
+        <text>发布测试题</text>
+        <image src='/image/tiaoz.png' class='tiaoz'></image>
+      </view>-->
+    </view>
+  </view> 
+</view>

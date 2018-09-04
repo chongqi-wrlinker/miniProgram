@@ -1,0 +1,33 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/wangqitop.png'></image>
+    </view>
+    <view class='dengjihe'>
+      <view class='hdtop'>
+      <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" class='headertop'>
+        <text wx:for="{{allKeMu}}" wx:key="{{index}}" wx:item="item" data-num='{{index+1}}' class="{{_num==index+1 ? 'checked':''}}" bindtap='click' data-kemu="{{item.lessionname}}">{{item.lessionname}}</text>
+      </scroll-view>
+      <button class='more' bindtap='checked' ><image src='/image/more.png' class='moreimg'></image></button>
+      </view>
+      <view  wx:if="{{mengShow}}"  bindtap='choose' class='mengceng'></view>
+      <view class="{{checked ? 'mulujihe':'hidden'}}" >
+        <block wx:for="{{allKeMu}}" wx:key="{{index}}">
+        <text data-num='{{index+1}}' class="{{_num==index+1 ? 'checked':''}}" bindtap='click'>{{item.lessionname}}</text>
+        </block>
+      </view>
+      <view wx:for="{{allKeMu}}" wx:key="{{index}}" wx:item="item" data-num='{{index+1}}' class="{{_num==index+1 ? 'yuwen':'hidden'}}">
+        <block wx:for="{{item.children}}" wx:key="{{index1}}">
+            <button class='yichuangguan' bindtap='showSelectLevel' data-lessionid="{{item.id}}" data-index="{{index}}">{{item.lessionname}}</button>
+        </block>
+      </view>
+      <text style='float:left;'>
+        注意：白色背景的按钮均为闯关成功的难度等级，深色背景的按钮，为为闯关或者正在闯关的等级。
+      </text>
+      <demoPicker id="demoPicker"></demoPicker>
+    </view>
+  </view>
+</view> 

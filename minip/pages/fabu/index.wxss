@@ -1,0 +1,47 @@
+.min{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+left:0;
+top:0;
+z-index: -1;
+}
+.backimg{width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;}
+.bodymin{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+height:100%;
+
+}
+.top{
+  float:left;
+width:100%;
+height:15%;
+}
+.top image{width: 68%; height: 70%; margin-top: 5%;}  
+ button:after{border: none;}
+ ::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.denglukj{float:left;
+width:92%;
+height:60%;
+margin-left:4%;
+text-align: left;
+}
+.neirong{background-color:#fdf3da;
+}
+.mima{font-size:14px;
+height:2rem;
+line-height:2rem;
+background-color:#fdf3da;
+}
+.denglu{background-color:#e0bb69;
+color:#fff;
+}

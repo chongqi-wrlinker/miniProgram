@@ -1,0 +1,2 @@
+<view id="zhezhao"></view>
+<web-view src="{{url}}"></web-view>

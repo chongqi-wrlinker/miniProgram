@@ -1,0 +1,18 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/fabu.png'></image>
+    </view>
+    <view class='denglukj'>
+      <view>请输入内容：</view>
+      <textarea class='neirong'></textarea>
+      <view style='visibility:hidden'>获取按钮</view>
+      <button>获取图片</button>
+      <view style='visibility:hidden'>发布按钮</view>
+      <button class='denglu'>发布</button>
+    </view>
+  </view>
+</view>

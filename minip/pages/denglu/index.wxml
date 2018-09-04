@@ -1,0 +1,19 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/denglu.png'></image>
+    </view>
+    <view class='denglukj'>
+      <view>请输入账号：</view>
+      <input type='text' name='loginname' bindinput="getValue" data-type='name' placeholder="沃仁号／手机／邮箱" focus="{{focus}}"class='zhanghao'></input>
+      <view>请输入密码：</view>
+      <input type='password' name='password' bindinput="getValue" data-type='pwd' class='mima'></input>
+      <view style='visibility:hidden'>登录按钮</view>
+      <button class='denglu' bindtap='doLogin'>登陆</button>
+      <view bindtap='newzhuce' class='lianjie'>前往注册新账号</view>
+    </view>
+  </view>
+</view>

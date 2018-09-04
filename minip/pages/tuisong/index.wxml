@@ -1,0 +1,34 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/tstop.png'></image>
+    </view>
+    <view class='tuisongnr'>
+      <view class='hdtop'>
+      <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" class='headertop'>
+        <block wx:for="{{content}}" wx:key="{{index}}">
+        <text data-num='{{index+1}}' class="{{_num==index+1 ? 'checked':''}}" bindtap='click'>{{item.muluname}}</text>
+        </block>
+      </scroll-view>
+      <button class='more' bindtap='check' ><image src='/image/more.png' class='moreimg'></image></button>
+      </view>
+      <view  wx:if="{{mengShow}}"  bindtap='choose' class='mengceng'></view>
+      <view class="{{checked ? 'mulujihe':'hidden'}}" >
+        <block wx:for="{{content}}" wx:key="{{index}}">
+        <text data-num='{{index+1}}' class="{{_num==index+1 ? 'checked':''}}" bindtap='click'>{{item.muluname}}</text>
+        </block>
+      </view>
+      <block wx:for="{{content}}" wx:key="{{index}}">
+      <view data-num='{{index+1}}' class="{{_num==index+1 ? 'geyan':'hidden'}}">
+        <block wx:for="{{item.contentList}}" wx:key="{{key1}}" wx:item="contentItem">
+          <text>{{item.content}}</text>
+        </block>
+      </view>
+      </block>
+      
+    </view>
+  </view> 
+</view>

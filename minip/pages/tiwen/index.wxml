@@ -1,0 +1,30 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='tuisongnr'>
+      <scroll-view scroll-y='true' style="height:100%" bindscrolltolower='lower'>
+      <block wx:for="{{list}}" wx:key="{{index}}">
+      <view class='liebiao' bindtap='wentixx' data-id="{{item.id}}">
+        <view class='xuhao'>{{index+1}}、</view>
+        <view class='timunr'>{{item.content}}</view>
+        <view class='nandukemu'>
+          <text class='ndkmcss'>{{item.luJin}}</text>
+          <block wx:if="{{item['state']>0}}">
+            <text class='ndkmcss' style='background:#6b7fa4;'>完结</text>
+          </block>
+          <block wx:else>
+            <text class='ndkmcss' style='background:#f38e00'>正在提问</text>
+          </block>
+          
+          
+        </view>
+      </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view> 
+</view>
+
+

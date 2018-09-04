@@ -1,0 +1,77 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='tuisongnr'>
+      <view class='biaoti'>【问题内容】</view>
+      <view class='wentinr'>
+        {{askQuestionInfo.content}}
+        <block wx:for="{{askPhotoList}}" wx:key="{{index}}">
+          <image data-url='{{item.photosrc}}' bindtap='previewImage' src='{{item.photosrc}}' style='width:90%;display:block'></image>
+        </block>
+        </view>
+      <view>
+        <text class='timuzl'>出题时间</text>
+        <text class='timuzl'>{{askQuestionInfo.time}}</text>
+      </view>
+      <block wx:if="{{!ownerStata}}">
+      <text class='wz'>请输入答案内容↓↓↓</text>
+      <textarea class='tiwenshuruk' bindinput='getValue' value='{{content}}'></textarea>
+      <view class='img'>
+        <block wx:for="{{chooseImageList}}" wx:key="{{index}}">
+          <view class='upimg'>
+            <image data-src="{{item}}" src="{{item}}" class="upimgs" bindtap='previewImage1'> </image>
+            <text class='shanchu' bindtap="deleteImage" data-index="{{index}}" mode="aspectFit">×</text>
+          </view>
+        </block>
+      </view>
+      <button class='shangchuan' catchtap='chooseimage'>+</button>
+      <button class='fabu' bindtap='submitReply'>回答</button>
+      </block>
+      <block wx:else><view class='fengexian'></view></block>
+      <view class='other'>【回答信息】</view>
+      <scroll-view scroll-y='true' style="height:300px" bindscrolltolower='lower'>
+        <block wx:for="{{askReplyList}}" wx:key="{{index}}">
+        <view class='wentilieb' data-id='{{item.id}}' style="border-bottom:1px solid #ffcd8c">
+          <view class='wenti' >
+          <text class='wentitext'>
+            <text>{{index+1}}、{{item.content}}</text>
+          </text>
+          <view style='clear:both;'>
+            <block wx:for="{{item.photoList}}" wx:key="{{index1}}" wx:for-item="j">
+              <image src='{{j.photosrc}}' data-replyId="{{item.id}}" data-src="{{j.photosrc}}" bindtap='previewImages'></image>
+            </block>
+          </view>
+          </view>
+          <view class='hdxx'>
+            <block wx:if="{{item['state']<1}}">
+              <block wx:if="{{ownerStata && !wanjie}}">
+                <text class='ndkmcss' bindtap='showModel' data-id="{{item.id}}">等待采纳</text>
+              </block>
+              <block wx:else>
+                <text class='ndkmcss'>等待采纳</text>
+              </block>
+            </block>
+            <block wx:elif="{{item['state']==1}}">
+              <text class='ndkmcss' style='background:#ff9103;'>最佳回答</text>
+            </block>
+            <block wx:elif="{{item['state']==2}}">
+              <text class='ndkmcss' style='background:red;'>谢谢回答</text>
+            </block>
+            <block wx:elif="{{item['state']==3}}">
+              <text class='ndkmcss' style='background:#bf9f59;'>无关回答</text>
+            </block>
+            <text class='timuzl'>{{item.time}}</text>
+            
+          </view>
+        </view>
+      </block>
+      </scroll-view>
+      <demoPicker id="demoPicker" bind:action="sure"></demoPicker>
+    </view>
+  </view> 
+</view>
+
+
+

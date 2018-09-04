@@ -1,0 +1,62 @@
+.min{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+left:0;
+top:0;
+z-index: -1;
+}
+.backimg{width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;}
+.bodymin{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+height:100%;
+
+}
+.top{
+  float:left;
+width:100%;
+height:15%;
+}
+.top image{width: 68%; height: 70%; margin-top: 5%;}
+ button:after{border: none;}
+ .kemuliebiao{float:left;
+width:100%;
+height:85%;
+}
+.hang{float:left;
+width:100%;
+height:18%;
+margin-bottom: 5%;
+}
+.hang picker{
+  float:left;
+  width:30%;
+  height:100%;
+  background-color:none !important;
+  background:none !important;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+ .hang button{
+   
+width:100%;
+height:100%;
+background-color:none !important;
+background:none !important;
+
+}
+
+.kemuimg{
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}

@@ -1,0 +1,228 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/paihangtop.png'></image>
+    </view>
+    <view class='qiehuan'>
+      <text class="{{ribang?'cheacked':''}}" style='margin-left: 9%;' bindtap='ribang'>日榜</text>
+      <text class="{{zhoubang?'cheacked':''}}" bindtap='zhoubang'>周榜</text>
+      <text class="{{yuebang?'cheacked':''}}" bindtap='yuebang'>月榜</text>
+      <text class="{{zongbang?'cheacked':''}}" bindtap='zongbang'>总榜</text>
+    </view>
+     <view class="{{ribang?'paihangnr':'hidden'}}">
+      <view class='first'>
+          <block wx:if="{{dayData.length > 1}}">
+            <view class='ltop'>
+              <text class='semc'>2</text>
+              <image src="{{dayData[1]['url']?dayData[1]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{dayData[1]['nickname']}}</text>
+              <text class='zhengquelv'>{{dayData[1]['score']}}</text>
+            </view>
+          </block>
+          <view class='touxiang'>
+              <image src='/image/first.png' class='diyi'></image>
+              <image src="{{dayData[0]['url']?dayData[0]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{dayData[0]['nickname']}}</text>
+              <text class='zhengquelv'>{{dayData[0]['score']}}</text>
+          </view>
+          <block wx:if="{{dayData.length > 2}}">
+              <view class='rtop'>
+                <text class='thmc'>3</text>
+                <image src="{{dayData[2]['url']?dayData[2]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+                <text class='name'>{{dayData[2]['nickname']}}</text>
+                <text class='zhengquelv'>{{dayData[2]['score']}}</text>
+              </view>
+          </block>
+      </view>
+      <view class='othermc'>
+        <block wx:if="{{dayData.length >3}}">
+
+          <block wx:for="{{dayData}}" wx:key="index">
+            <block wx:if="{{index>2}}">
+              <view class='other'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>{{item.nickname}}</text>
+                <text>{{item.score}}</text>
+              </view>
+            </block>
+          </block>
+        </block>
+        <view class='other'>
+        </view>
+        <block wx:for="{{dayData}}" wx:key="index">
+            <block wx:if="{{item['openid']==myOpenid}}">
+              <view class='our'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>我</text>
+                <text>{{item['score']}}</text>
+              </view>
+            </block>
+        </block>
+      </view>
+    </view>
+    <view class="{{zhoubang?'paihangnr':'hidden'}}">
+      <view class='first'>
+          <block wx:if="{{weekData.length > 1}}">
+            <view class='ltop'>
+              <text class='semc'>2</text>
+              <image src="{{weekData[1]['url']?weekData[1]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{weekData[1]['nickname']}}</text>
+              <text class='zhengquelv'>{{weekData[1]['score']}}</text>
+            </view>
+          </block>
+          <view class='touxiang'>
+              <image src='/image/first.png' class='diyi'></image>
+              <image src="{{weekData[0]['url']?weekData[0]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{weekData[0]['nickname']}}</text>
+              <text class='zhengquelv'>{{weekData[0]['score']}}</text>
+          </view>
+          <block wx:if="{{weekData.length > 2}}">
+              <view class='rtop'>
+                <text class='thmc'>3</text>
+                <image src="{{weekData[2]['url']?weekData[2]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+                <text class='name'>{{weekData[2]['nickname']}}</text>
+                <text class='zhengquelv'>{{weekData[2]['score']}}</text>
+              </view>
+          </block>
+      </view>
+      <view class='othermc'>
+        <block wx:if="{{weekData.length >3}}">
+          <block wx:for="{{weekData}}" wx:key="index">
+            <block wx:if="{{index>2}}">
+              <view class='other'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>{{item.nickname}}</text>
+                <text>{{item.score}}</text>
+              </view>
+            </block>
+          </block>
+        </block>
+        <view class='other'>
+        </view>
+        <block wx:for="{{weekData}}" wx:key="index">
+            <block wx:if="{{item['openid']==myOpenid}}">
+              <view class='our'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>我</text>
+                <text>{{item['score']}}</text>
+              </view>
+            </block>
+        </block>
+      </view>
+
+    </view>
+    <view class="{{yuebang?'paihangnr':'hidden'}}">
+      <view class='first'>
+          <block wx:if="{{monthData.length > 1}}">
+            <view class='ltop'>
+              <text class='semc'>2</text>
+              <image src="{{monthData[1]['url']?monthData[1]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{monthData[1]['nickname']}}</text>
+              <text class='zhengquelv'>{{monthData[1]['score']}}</text>
+            </view>
+          </block>
+          <view class='touxiang'>
+              <image src='/image/first.png' class='diyi'></image>
+              <image src="{{monthData[0]['url']?monthData[0]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{monthData[0]['nickname']}}</text>
+              <text class='zhengquelv'>{{monthData[0]['score']}}</text>
+          </view>
+          <block wx:if="{{monthData.length > 2}}">
+              <view class='rtop'>
+                <text class='thmc'>3</text>
+                <image src="{{monthData[2]['url']?monthData[2]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+                <text class='name'>{{monthData[2]['nickname']}}</text>
+                <text class='zhengquelv'>{{monthData[2]['score']}}</text>
+              </view>
+          </block>
+      </view>
+      <view class='othermc'>
+        <block wx:if="{{monthData.length >3}}">
+          <block wx:for="{{monthData}}" wx:key="index">
+            <block wx:if="{{index>2}}">
+              <view class='other'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>{{item.nickname}}</text>
+                <text>{{item.score}}</text>
+              </view>
+            </block>
+          </block>
+        </block>
+        <view class='other'>
+        </view>
+        <block wx:for="{{monthData}}" wx:key="index">
+            <block wx:if="{{item['openid']==myOpenid}}">
+              <view class='our'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>我</text>
+                <text>{{item['score']}}</text>
+              </view>
+            </block>
+        </block>
+      </view>
+
+    </view>
+    <view class="{{zongbang?'paihangnr':'hidden'}}">
+      <view class='first'>
+          <block wx:if="{{allData.length > 1}}">
+            <view class='ltop'>
+              <text class='semc'>2</text>
+              <image src="{{allData[1]['url']?allData[1]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{allData[1]['nickname']}}</text>
+              <text class='zhengquelv'>{{allData[1]['score']}}</text>
+            </view>
+          </block>
+          <view class='touxiang'>
+              <image src='/image/first.png' class='diyi'></image>
+              <image src="{{allData[0]['url']?allData[0]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+              <text class='name'>{{allData[0]['nickname']}}</text>
+              <text class='zhengquelv'>{{allData[0]['score']}}</text>
+          </view>
+          <block wx:if="{{allData.length > 2}}">
+              <view class='rtop'>
+                <text class='thmc'>3</text>
+                <image src="{{allData[2]['url']?allData[2]['url']:'/image/cst.jpg'}}" class='tximg'></image>
+                <text class='name'>{{allData[2]['nickname']}}</text>
+                <text class='zhengquelv'>{{allData[2]['score']}}</text>
+              </view>
+          </block>
+      </view>
+      <view class='othermc'>
+        <block wx:if="{{allData.length >3}}">
+          <block wx:for="{{allData}}" wx:key="index">
+            <block wx:if="{{index>2}}">
+              <view class='other'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>{{item.nickname}}</text>
+                <text>{{item.score}}</text>
+              </view>
+            </block>
+          </block>
+        </block>
+        <view class='other'>
+        </view>
+        <block wx:for="{{allData}}" wx:key="index">
+            <block wx:if="{{item['openid']==myOpenid}}">
+              <view class='our'>
+                <text class='mingci'>{{index+1}}</text>
+                <image src="{{item['url']?item['url']:'/image/cst.jpg'}}" class='otherimg'></image>
+                <text class='otname'>我</text>
+                <text>{{item['score']}}</text>
+              </view>
+            </block>
+        </block>
+      </view>
+
+    </view>
+  </view>
+</view>

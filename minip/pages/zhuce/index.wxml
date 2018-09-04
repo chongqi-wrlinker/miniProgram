@@ -1,0 +1,21 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/zhuce.png'></image>
+    </view>
+    <view class='denglukj'>
+      <view>请输入邮箱：</view>
+      <input type='text' bindinput='getValue' data-type="1" class='zhanghao'></input>
+      <view>请输入密码：</view>
+      <input type='password' bindinput='getValue' data-type="2" class='mima'></input>
+      <view>请确认密码：</view>
+      <input type='password' bindinput='getValue' data-type="3" class='mima'></input>
+      <view style='visibility:hidden'>注册按钮</view>
+      <button class='denglu' bindtap='register'>注册</button>
+      <view bindtap='newdenglu' class='lianjie'>我有账号，前往登录 </view>
+    </view>
+  </view>
+</view>

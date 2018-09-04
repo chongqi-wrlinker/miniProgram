@@ -1,0 +1,19 @@
+<!--components/picker/picker.wxml-->
+<view class="free-dialog {{ showDialog ? 'free-dialog--show' : '' }}">
+    <view class="free-dialog__mask" bindtap="toggleDialog" />
+    <view class="free-dialog__container">
+      <view style="padding: 5% 5% 15%;">
+        <form bindsubmit='submit' bindreset="reset">
+          <view bindtap='cancle' class="free-button free-dialog-reset">取消</view>
+          <view bindtap='sure1' class="free-button free-dialog-submit">确定</view>
+
+          <radio-group class='free-radios'>
+            <label class="free-radio" bindtap="_click" wx:for="{{items}}" wx:key="{{index}}" data-key="{{index}}" style="{{index==key?'background:#48c23d;color:#fff;':'background:#fff;color:#000;'}}">
+              <label class="free-text">{{item}}</label>
+            </label>
+          </radio-group>
+        </form>
+
+      </view>
+    </view>
+  </view>

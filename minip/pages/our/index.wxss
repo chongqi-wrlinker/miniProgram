@@ -1,0 +1,166 @@
+.min{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+left:0;
+top:0;
+z-index: -1;
+}
+.backimg{width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;}
+.bodymin{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+height:100%;
+}
+.xxliebiao{float:left;
+width:100%;
+background-color:#fdf2de;
+min-height:35px;
+border-bottom:1px solid #ffcd8c;
+line-height:35px;
+text-align:left;
+padding-left:10px;
+position:relative;
+}
+.xx{color:#807b65;
+font-size:14px;
+}
+.tiaoz{width:13px;
+height:13px;
+vertical-align:middle;
+position:absolute;
+right:8%;
+top:11px;
+}
+.xz{transform:rotate(90deg);
+}
+.ourxx{font-size:14px;
+color:#807b65;
+}
+.hidden{display:none;}
+ button:after{border: none;}
+.more{float:right;
+width:10% !important;
+height:36px !important;
+padding:0px;
+border-radius:0px;
+border-bottom: 1px solid #ff9103;
+}
+.moreimg{width: 100%;height: 100%;}
+.top{
+  float:left;
+width:100%;
+height:15%;
+}
+.top image{width: 68%; height: 70%; margin-top: 5%;}  
+.tuisongnr{float:left;
+width:93%;
+height:65%;
+background-color:#fdf2de;
+margin-left:4%;
+position: relative;
+}
+.headertop{border-bottom:1px solid #ff9103;
+float:left;
+width:90% !important;
+line-height:35px;
+text-align:left;
+overflow:hidden;
+height:35px;
+position:relative;
+font-size:18px;
+
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.headertop text{padding-left:15px;
+padding-right:15px;
+display:inline-block;
+height:33px;
+
+}
+.checked{border-bottom:2px solid #ff9103;
+}
+.geyan{float:left;
+font-size:14px;
+text-align: left;
+padding: 5px;
+height:90%;
+overflow:auto;
+
+}
+.hidden{display: none;}
+.geyan text{margin-bottom:10px;
+width:100%;
+display:block;
+}
+.shici{float:left;
+width:100%;
+height:90%;
+overflow:auto;
+}
+.shicinr{float:left;
+margin-top: 20px;
+width:100%;
+}
+.mulujihe{position:absolute;
+width:50%;
+right:0px;
+background-color:#fff;
+z-index:30;
+text-align:left;
+}
+.mengceng{position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+z-index:20;
+}
+.touxiang{width:80px;
+height:80px;
+border-radius:50px;
+margin-top:5%;
+border-bottom:1px solid #ffcd8c;
+padding: 0px;
+}
+.touxiang image{width: 100%;height: 100%;}
+.touxtop{
+  float:left;
+width:100%;
+height:25%;
+border-bottom:1px solid #ffcd8c;
+}
+.mulujihe text{display:inline-block;
+height:25px;
+font-size:14px;
+margin-bottom:10px;
+width:50%;
+text-align:center;
+
+}
+.shitimu{display:block;
+font-size:22px;
+font-family:kaiti;
+font-weight:bold;
+}
+.shizuozhe{display:block;
+font-size:18px;
+font-family:kaiti;
+font-weight:bold;
+}
+.shiju{font-family:kaiti;
+display:block;
+font-size:18px;
+line-height:25px;
+letter-spacing:5px;
+margin-left:10%;
+
+}

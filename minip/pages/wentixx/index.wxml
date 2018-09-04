@@ -1,0 +1,44 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='tuisongnr'>
+      <text class='ourtiwen'>【我的提问】</text>
+      <view class='wentixx'>
+        <view class='wentit'>
+          <text class='wenzixx'>书童</text>
+          <text class='wenzixx'>语文</text>
+          <text class='sjxx'>2018-08-10</text>
+        </view>
+        <view class='wentinr'>标志大全 服装标志 商标大全 万千百货 劳力士 万宝龙 屈臣氏 阿玛尼 范思哲 杰尼亚 周大福 宝姿 ECCO 暇步士 CK 鳄鱼 BOSS LACOSTE CASIO 耐克 阿迪达斯 同仁堂 施华洛世奇 迪士尼 ZIPPO 鄂尔多斯 周生生 珠宝标志 化妆品标志 家居用品标志 LOGO大全 品牌商标 品牌大全 童装标志 女装标志 企业LOGO标志 标识标志图标 矢量 AI
+          <image src='/image/cst.jpg' style='width:90%;display:block'></image>
+          LOGO大全 品牌商标 品牌大全 童装标志 女装标志 企业LOGO标志 标识标志图标 矢量 AI
+        </view>
+      </view>
+      <text class='ourtiwen'>【解答】</text>
+       <scroll-view scroll-y='true' style="height:300px" bindscrolltolower='lower'>
+       <block wx:for="{{res}}" wx:key="{{index}}">
+      <view class='jiedaliebiao'>
+        <view class='wentit'>
+          <text class='wenzixx'>用户名</text>
+          <text class='sjxx'>2018-08-11</text>
+        </view>
+        <view class='wentinr'>
+          对对对对对对多多多多多多多多多多
+           <image src='/image/cst.jpg' style='width:90%;display:block'></image>
+          多多多多多多多多多多多多多多多多多多多多多多多多多
+        </view>
+        <view>
+          <button class='zuijia'>设为最佳</button>
+          <button class='bucaiyong'>不予采用</button>
+          <button class='buxiangg'>不相关</button>
+        </view>
+      </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view> 
+</view>
+
+

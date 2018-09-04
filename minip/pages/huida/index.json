@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "解惑",
+  "usingComponents": {
+    "demoPicker": "/components/justpicker/index"
+  }
+}

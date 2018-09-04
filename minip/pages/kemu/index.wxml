@@ -1,0 +1,64 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/kemuxuanze.png'></image>
+    </view>
+    <view class='kemuliebiao'>
+      <view class='hang'>
+        <picker bindchange="bindPickerChange" data-msg="汉语" value="{{index}}" range="{{yuwen}}">
+          <view class="picker">
+            <image src='/image/yuwen.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="数学" value="{{index}}" range="{{shuxue}}">
+          <view class="picker">
+            <image src='/image/shuxue.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="英语" value="{{index}}" range="{{yingyu}}">
+          <view class="picker">
+            <image src='/image/yingyu.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+          
+        </view>
+      <view class='hang'>
+        <picker bindchange="bindPickerChange" data-msg="物理" value="{{index}}" range="{{wuli}}">
+          <view class="picker">
+            <image src='/image/wuli.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="化学" value="{{index}}" range="{{huaxue}}">
+          <view class="picker">
+            <image src='/image/huaxue.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="生物" value="{{index}}" range="{{shengwu}}">
+          <view class="picker">
+            <image src='/image/shengwu.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='hang'>
+        <picker bindchange="bindPickerChange" data-msg="政治" value="{{index}}" range="{{zhengzhi}}">
+          <view class="picker">
+            <image src='/image/zhengzhi.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="历史" value="{{index}}" range="{{lishi}}">
+          <view class="picker">
+            <image src='/image/lishi.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+        <picker bindchange="bindPickerChange" data-msg="地理" value="{{index}}" range="{{dili}}">
+          <view class="picker">
+            <image src='/image/dili.png' style='height:85px;width:85px'></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='top'>
+      <image src='/image/shezhitop.png'></image>
+    </view>
+    <view class='mulu'>
+      <view class='mulus'>目录设置：</view>
+      <view class='mulur'>
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for-items="{{muLus}}" wx:key="{{index}}">
+                <checkbox value="{{item.id}}" checked="{{item.checked}}"/>{{item.muluname}}
+            </label>
+        </checkbox-group>
+      </view>
+      <view class='queren'>
+        <button bindtap='saveConfig' data-msg="1">确认</button>
+      </view>
+    </view>
+    <view class='guanjianci'>
+      <view class='mulus'>选择关键词：</view>
+      <view class='mulur'>
+       <checkbox-group bindchange="checkboxChange1">
+            <label class="checkbox" wx:for-items="{{keywords}}" wx:key="{{index}}">
+                <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </checkbox-group>
+      </view>
+      <view class='queren'>
+        <button bindtap='saveConfig' data-msg="2">确认</button>
+      </view>
+    </view>
+  </view>
+</view>

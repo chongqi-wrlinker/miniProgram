@@ -1,0 +1,2 @@
+<!--pages/chongzuo/index.wxml-->
+<web-view src="{{url}}"></web-view>

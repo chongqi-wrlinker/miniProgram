@@ -1,0 +1,35 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  
+  <view class='bodymin'>
+    <view class='tuisongnr'>
+      <text class='wz'>请输入提问内容</text>
+      <textarea class='tiwenshuruk' bindinput='getValue' value="{{content}}"></textarea>
+      <view class='img'>
+        <block wx:for="{{chooseImageList}}" wx:key="{{index}}">
+          <view class='upimg'>
+            <image data-src="{{item}}" src="{{item}}" class="upimgs" bindtap='previewImage'> </image>
+            <image src='/image/shanchu.png' class='shanchu' bindtap="deleteImage" data-index="{{index}}" mode="aspectFit"></image>
+          </view>
+        </block>
+      </view>
+      <button class='shangchuan' catchtap='chooseimage'>+</button>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" class='fabu'>
+        发布提问
+      </picker>
+      <view class='other'>【提问信息】</view>
+      <scroll-view scroll-y='true' style="height:300px" bindscrolltolower='lower'>
+        <block wx:for="{{res}}" wx:key="{{index}}">
+        <view class='wentilieb' bindtap='huida' data-id='{{item.id}}' style="height:30px;width:100%;text-align:left;line-height:30px; border-bottom:1px solid #ffcd8c">
+          <view class='xuhao'>{{index+1}}、</view>
+          <view class='wenti'>{{item.content}}</view>
+        </view>
+      </block>
+      </scroll-view>
+    </view>
+  </view> 
+</view>
+
+

@@ -1,0 +1,16 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <button class='minbutton' bindtap='kaishidati'><image src='/image/kaishidati.png' class='bodyimage' ></image></button>
+    <button class='minbutton' bindtap='wangqichengjiu'><image src='/image/wangqichengjiu.png' class='bodyimage'></image></button>
+    <button class='minbutton' open-type="share"><image src='/image/haiyouyaoqing.png' class='bodyimage'></image></button>
+    <button class='minbutton' bindtap='datiguize'><image src='/image/datiguize.png' class='bodyimage'></image></button>
+    <view class='other'>
+      <button open-type='getUserInfo' bindgetuserinfo="getUserInfo"><image src='/image/paihangbang.png' ></image></button>
+      <button bindtap='tuisong'><image src='/image/tuisong.png' ></image></button>
+      <button bindtap='shezhi'><image src='/image/shezhi.png' ></image></button>
+    </view>
+  </view>
+</view>

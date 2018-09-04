@@ -1,0 +1,50 @@
+<view>
+  <view class='min'>
+      <image src='/image/backImg.jpg' class='backimg'></image>
+  </view>
+  <view class='bodymin'>
+    <view class='guizenr'>
+          <view class='biaoti'>【我们的理念】</view>
+          <view class='linian'>
+          <view>
+            <text>
+              <text style='visibility:hidden;'>空格</text>首先我们认为真正的专家不是靠死记硬背的知识灌输培养出来的，而是要像一棵小树苗一样自我成长。足够的好奇心、攻克难关的成就感、以及在可见的前方但又非遥不可及的挑战，才是知识体系健康成长的最佳养料，会当凌绝顶的骄傲又是卓越的最佳促进剂。
+            </text>
+          </view>
+          <view>
+            <text>
+              <text style='visibility:hidden;'>空格</text>其次我们认为公平的教育本身就是最大的不公平。同样的一堂课、一套试卷，肯定不能照顾到所有的学生，基础好的会觉得没有挑战性，做多了就容易失去了进取心；而那些基础比较差的学生做起来又太吃力，过难的题目不但做起来毫无头绪，找不到切入点，还白白浪费时间；太低的正确率又会严重影响孩子的成就感，使孩子滋生厌学情绪。
+            </text>
+          </view>
+          <view>
+            <text>
+              <text style='visibility:hidden;'>空格</text>所以我们准备了十八个难度等级，让每个孩子都能够找到最适合自己的题目。百分之七十到百分之九十的正确率是一个比较合理的区间，即照顾到了成就感，又能够比较好的发现知识漏洞，主动去学习。
+            </text>
+          </view>
+          <view>
+            <text>
+               <text style='visibility:hidden;'>空格</text>最后就是对知识掌握程度的考核，能够解决别人出的题目，毕竟还是落了下乘，真正能够体现对知识的掌握水平的关键，是能够把知识锻炼进自己的思维基础，直接用这些知识来观察世界和思考问题。能够创造出经得起推敲并有一定水平的题目出来的学者，才是驾驭知识而不是被知识奴役的大师。
+            </text>
+          </view>
+          </view>
+          <view class='biaoti'>【答题规则】</view>
+          <view class='guize'>
+          <view>
+            <text>
+             一、每一道题都对应着不同的分值，一级难度的题目每道题一分，十八级的题目每题就是十八分。
+            </text>
+          </view>
+          <view>
+            <text>
+             二、回答正确获得相应分值，答错则会被倒扣掉相应的分值，点不会就可以不被扣分，但题目可以被收录进错题本。
+            </text>
+          </view>
+          <view>
+            <text>
+             三、在某一难度累积到足够的分值，并能够稳定保持高于设定值的正确率，系统会提醒你可以升级去做更高难度的题目，此时你可以选择进阶，当然也可以选择忽略，继续练习当前难度的题目。
+            </text>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
